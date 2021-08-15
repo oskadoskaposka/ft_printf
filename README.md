@@ -28,7 +28,6 @@ Files in this project.
 | --- | --- | --- |
 | [ft_printf.c](https://github.com/oskadoskaposka/gnl/blob/main/get_next_line.c) | ✔️ | ✔️ |
 | [ft_printf.h](https://github.com/oskadoskaposka/gnl/blob/main/get_next_line.c) | ✔️ | ✔️ |
-
 | [README.md](https://github.com/oskadoskaposka/gnl/blob/main/README.md) | ✔️ | ❌ |
 
 <!-- ✔️ -->
