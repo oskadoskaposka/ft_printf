@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/09 18:30:30 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/08/09 19:39:06 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/08/17 19:55:51 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define FT_PRINTF_H
 
 # include <stdarg.h>
+# include "Libft/libft.h"
 
 //apagar library da printf
 # include <stdio.h>

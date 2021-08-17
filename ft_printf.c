@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/09 18:27:26 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/08/09 19:45:58 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/08/17 20:08:59 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ int	ft_printf(const char *string, ...)
 	len = ft_strlen(string); //len no tamanho da string
 	va_start(flags, string);
 	
+	printed = 0;
 	while (len > 0 && len--)
 	{
 		//chegar o char da str se é '%'

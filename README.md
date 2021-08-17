@@ -26,10 +26,10 @@ Files in this project.
 
 | Name | in Repo? | allowed? |
 | --- | --- | --- |
-| [ft_printf.c](https://github.com/oskadoskaposka/gnl/blob/main/get_next_line.c) | ✔️ | ✔️ |
-| [ft_printf.h](https://github.com/oskadoskaposka/gnl/blob/main/get_next_line.c) | ✔️ | ✔️ |
-
-| [README.md](https://github.com/oskadoskaposka/gnl/blob/main/README.md) | ✔️ | ❌ |
+| [ft_printf.c]() | ✔️ | ✔️ |
+| [ft_printf.h]() | ✔️ | ✔️ |
+| [libft]() | ✔️ | ✔️ |
+| [README.md]() | ✔️ | ❌ |
 
 <!-- ✔️ -->
 <!-- ❌ -->
