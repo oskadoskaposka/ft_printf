@@ -6,7 +6,7 @@
 #    By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/11 22:01:08 by apaduan-          #+#    #+#              #
-#    Updated: 2021/08/17 20:33:13 by apaduan-         ###   ########.fr        #
+#    Updated: 2021/08/17 21:45:34 by apaduan-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,8 +15,7 @@ NAME=libftprintf.a
  
 # Files of Printf
 # .c files
-C_SOURCE=ft_printf.c \
-		 main.c
+C_SOURCE=ft_printf.c 
  
 # .h files
 H_SOURCE=ft_printf.h
@@ -25,9 +24,9 @@ H_SOURCE=ft_printf.h
 OUT=$(C_SOURCE:.c=.o)
  
 #Libft Path
-LIBFT_PATH = Libft
+LIBFT_PATH = Libft/
 
-#Libft file
+#Libft name
 LIBFT = $(LIBFT_PATH)libft.a
 
 # Compiler
@@ -39,25 +38,32 @@ CC_FLAGS=-Wall         \
          -Werror
 
 # Compilation and linking
-
 all: $(NAME)
 
+# This rule, compiles LibftPrintf.a
 $(NAME): $(LIBFT) $(OUT)
+	@rm -f $(NAME)
+	@cp $(LIBFT) $(NAME)
 	@ar rcs  $(NAME) $(OUT)
 	@echo "Creating $(NAME)"
 
 $(LIBFT):
 	@cd $(LIBFT_PATH); make
 
+# 
 $(OUT): $(C_SOURCE) $(H_SOURCE)
 	@$(CC) $(CC_FLAGS) -c $(C_SOURCE)
 	@echo "Creating $(OUT)"
 
+# Enters Libft_path and removes only *.o files
+# Then remove *.o files from root directory
 clean:
 	@cd $(LIBFT_PATH); make clean
 	@rm -f $(OUT)
 	@echo "Removing $(OUT)"
 
+# Enters Libft_path and removes *.o and *.a files 
+# Then remove *.o and *.a files from root directory
 fclean:
 	@cd $(LIBFT_PATH); make fclean
 	@rm -f $(OUT)
@@ -65,6 +71,7 @@ fclean:
 	@rm -f $(NAME)
 	@echo "Removing $(NAME)"
 
+# Cleans all files and redo the compilation
 re: fclean all
 
 #To use this command in terminal write:

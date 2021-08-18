@@ -6,10 +6,11 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/09 18:27:26 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/08/17 20:08:59 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/08/17 21:24:41 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "Libft/libft.h"
 #include "ft_printf.h"
 
 int	ft_printf(const char *string, ...)
@@ -25,7 +26,7 @@ int	ft_printf(const char *string, ...)
 	while (len > 0 && len--)
 	{
 		//chegar o char da str se é '%'
-			// se for, olhar o proximo char se é c s p d i u x %
+			// se for, olhar o proximo char se é c s p d i u x X %
 			// se for, converter flag e add na str??
 			// se não for, imprimir?
 		//imprimir toda str
