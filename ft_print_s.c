@@ -1,27 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_print_s.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/09 18:30:30 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/08/18 23:23:32 by apaduan-         ###   ########.fr       */
+/*   Created: 2021/08/18 23:19:06 by apaduan-          #+#    #+#             */
+/*   Updated: 2021/08/18 23:44:23 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#include "ft_printf.h"
 
-# include <stdarg.h>
-# include "Libft/libft.h"
+//print c and returns the number of printed chars
 
-//arquivos da Printf
-int	ft_printf(const char *string, ...);
-int	functions_flags(va_list args, int flag);
+int	ft_print_s(char *string)
+{
+	int	counter;
 
-//arquivos das flags
-int	ft_print_c(int c);
-int	ft_print_s(char * string);
-
-#endif
+	counter = 0;
+	while (*string)
+	{
+		ft_putchar_fd(*string, 1);
+		string++;
+		counter++;
+	}
+	return (counter);
+}

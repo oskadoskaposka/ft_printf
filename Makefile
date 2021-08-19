@@ -6,7 +6,7 @@
 #    By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/11 22:01:08 by apaduan-          #+#    #+#              #
-#    Updated: 2021/08/18 22:51:51 by apaduan-         ###   ########.fr        #
+#    Updated: 2021/08/18 23:23:02 by apaduan-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,8 @@ NAME=libftprintf.a
 # Files of Printf
 # .c files
 C_SOURCE=ft_printf.c \
-		 ft_print_c.c
+		 ft_print_c.c \
+		 ft_print_s.c
  
 # .h files
 H_SOURCE=ft_printf.h

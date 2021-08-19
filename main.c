@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/09 18:52:18 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/08/18 23:03:09 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/08/18 23:58:37 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,23 @@
 
 int	main (void)
 {
-	char teste[] = "banana %c";
+	// Variaveis
+	char *frase;
 	int tamanho;
 
-	tamanho = ft_printf(teste, 97);
-	ft_printf("%c", tamanho);
+	// Teste do c
+	ft_printf("-------------------C-----------------\n");
+	frase = "banana %c";
+	tamanho = ft_printf(frase, 'b');
+	printf("%d", tamanho);
+	ft_printf("\n-------------------------------------\n\n");
+	
+	// Teste do s
+	ft_printf("-------------------S-----------------\n");
+	frase = "banana %s";
+	tamanho = ft_printf(frase, "é uma fruta");
+	printf("%d", tamanho);
+	ft_printf("\n-------------------------------------\n");
+	
 	return (0);
 }
