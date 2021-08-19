@@ -6,7 +6,7 @@
 #    By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/11 22:01:08 by apaduan-          #+#    #+#              #
-#    Updated: 2021/08/18 22:28:28 by apaduan-         ###   ########.fr        #
+#    Updated: 2021/08/18 22:51:51 by apaduan-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ NAME=libftprintf.a
 # Files of Printf
 # .c files
 C_SOURCE=ft_printf.c \
-		 src/ft_print_c.c
+		 ft_print_c.c
  
 # .h files
 H_SOURCE=ft_printf.h
@@ -74,6 +74,9 @@ fclean:
 
 # Cleans all files and redo the compilation
 re: fclean all
+
+# Cleans all files, redo the compilation and cleans .o
+rec: fclean all clean
 
 #To use this command in terminal write:
 # make git m="your message"

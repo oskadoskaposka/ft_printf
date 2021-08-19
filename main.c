@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/09 18:52:18 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/08/18 22:29:36 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/08/18 23:03:09 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,10 @@
 
 int	main (void)
 {
-	char teste[] = "banana";
+	char teste[] = "banana %c";
+	int tamanho;
 
-	ft_printf(teste, "123");
+	tamanho = ft_printf(teste, 97);
+	ft_printf("%c", tamanho);
 	return (0);
 }
