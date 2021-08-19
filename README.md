@@ -44,6 +44,12 @@ Learn how to use variadic arguments.
 
 [Back to top](#indice)
 
+
+TODO
+Instalar GEF e ler documentação. É um GDB melhorado com interface mais bonitinha e com mais info.
+Colocar a GITHUB action da norminette no repo.
+
+
 --------------------
 
 <img align="right" src="https://komarev.com/ghpvc/?username=oskadoskaposka&color=lightgrey&style=flat&label=visitors" alt="Visitors badge" />
@@ -55,4 +61,5 @@ links para guardar referente ao PRINTF
 https://www.gnu.org/software/make/manual/make.html#Recursion
 https://www.notion.so/fr_printf-7ba5a9061a194587b0fc35c67aabdbc8
 https://github.com/alexandregv/norminette-action-demo
+https://gef.readthedocs.io/en/master/
 -->
