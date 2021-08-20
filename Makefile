@@ -6,7 +6,7 @@
 #    By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/11 22:01:08 by apaduan-          #+#    #+#              #
-#    Updated: 2021/08/18 23:23:02 by apaduan-         ###   ########.fr        #
+#    Updated: 2021/08/19 22:33:36 by apaduan-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -79,11 +79,20 @@ re: fclean all
 # Cleans all files, redo the compilation and cleans .o
 rec: fclean all clean
 
-#To use this command in terminal write:
+# To use this command in terminal write:
 # make git m="your message"
 git:
 	@git add .
 	@git commit -m "$m"
 	@git push
+
+# Compiles with main.c and exec *.c, then removes the .o
+test: rec
+	@echo ''
+	@echo ''
+	@echo 'Testing $(NAME)'
+	@echo ''
+	@$(CC) main.c $(NAME) && ./a.out
+	@rm a.out
 
 .PHONY: 
