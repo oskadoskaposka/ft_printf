@@ -1,31 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_s.c                                       :+:      :+:    :+:   */
+/*   ft_print_di.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/18 23:19:06 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/08/19 22:46:34 by apaduan-         ###   ########.fr       */
+/*   Created: 2021/08/19 22:36:42 by apaduan-          #+#    #+#             */
+/*   Updated: 2021/08/19 22:44:02 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-//print c and returns the number of printed chars
-
-int	ft_print_s(char *string)
+int	ft_print_di(int c)
 {
 	int	counter;
+	char *string;
 
-	if(!string)
-		return (0);
-	counter = 0;
-	while (*string)
-	{
-		ft_putchar_fd(*string, 1);
-		string++;
-		counter++;
-	}
+	string = ft_itoa(c);
+	counter = ft_print_s(string);
 	return (counter);
 }

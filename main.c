@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/09 18:52:18 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/08/19 22:27:43 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/08/19 22:46:19 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,5 +38,11 @@ int	main(void)
 	tamanho = ft_printf(frase);
 	ft_printf("\n-------------------------------------\n\n");
 
+	// Teste do %
+	ft_printf("-------------------%-----------------\n");
+	frase = "banana %s";
+	tamanho = ft_printf(frase, 165);
+	ft_printf("\n-------------------------------------\n\n");
+	
 	return (0);
 }
