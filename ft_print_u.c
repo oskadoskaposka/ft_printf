@@ -1,21 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_c.c                                       :+:      :+:    :+:   */
+/*   ft_print_u.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/17 22:29:05 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/08/19 23:23:00 by apaduan-         ###   ########.fr       */
+/*   Created: 2021/08/19 23:22:41 by apaduan-          #+#    #+#             */
+/*   Updated: 2021/08/19 23:30:38 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//print c and returns the number of printed chars
+// Prints a string with unsigned int number 'c' 
+// and returns numbers of printed chars.
 
 #include "ft_printf.h"
 
-int	ft_print_c(int c)
+int	ft_print_u (unsigned int c)
 {
-	ft_putchar_fd (c, 1);
-	return (1);
+	int		counter;
+	char	*string;
+
+	string = ft_uitoa (c);
+	counter = ft_print_s (string);
+	free (string);
+	return (counter);
 }

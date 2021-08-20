@@ -6,13 +6,13 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/09 18:27:26 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/08/19 22:45:29 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/08/19 23:34:07 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-// checa o char da str se é '%' e se o proximo é "cspdiuxX%", falta "pdiuxX" 
+// checa o char da str se é '%' e se o proximo é "cspdiuxX%", falta "pxX" 
 int	functions_flags(va_list args, int flag)
 {
 	int	printed;
@@ -25,7 +25,9 @@ int	functions_flags(va_list args, int flag)
 	else if (flag == '%')
 		printed = ft_print_c(flag);
 	else if (flag == 'd' || flag == 'i')
-		printed = ft_print_c(va_arg(args, int));
+		printed = ft_print_di(va_arg(args, int));
+	else if (flag == 'u')
+		printed = ft_print_u(va_arg(args, unsigned int));
 	return (printed);
 }
 
