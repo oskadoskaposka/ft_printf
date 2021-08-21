@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/21 01:31:52 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/08/21 01:35:39 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/08/21 01:54:28 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 #include "ft_printf.h"
 
-int	ft_print_p (unsigned int c, int letter)
+int	ft_print_p (unsigned long long c, int letter)
 {
 	int		counter;
 	char	*string;

@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/09 18:27:26 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/08/21 01:47:49 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/08/21 02:00:02 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int	functions_flags(va_list args, int flag)
 	else if (flag == 'X')
 		printed = ft_print_x (va_arg(args, unsigned int), 'A');
 	else if (flag == 'p')
-		printed = ft_print_p (va_arg(args, unsigned int), 'a');
+		printed = ft_print_p (va_arg(args, unsigned long long), 'a');
 	return (printed);
 }
 

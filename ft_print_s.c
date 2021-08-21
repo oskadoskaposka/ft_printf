@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/18 23:19:06 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/08/19 22:46:34 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/08/21 02:02:54 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_print_s(char *string)
 	int	counter;
 
 	if(!string)
-		return (0);
+		return (ft_print_s("(null)"));
 	counter = 0;
 	while (*string)
 	{
