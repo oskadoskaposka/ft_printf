@@ -6,7 +6,7 @@
 #    By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/11 22:01:08 by apaduan-          #+#    #+#              #
-#    Updated: 2021/08/21 01:16:59 by apaduan-         ###   ########.fr        #
+#    Updated: 2021/08/21 01:36:29 by apaduan-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,8 @@ C_SOURCE=ft_printf.c \
 		 ft_print_s.c \
 		 ft_print_di.c \
 		 ft_print_u.c \
-		 ft_print_x.c
+		 ft_print_x.c \
+		 ft_print_p.c
  
 # .h files
 H_SOURCE=ft_printf.h

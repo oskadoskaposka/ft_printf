@@ -6,7 +6,7 @@
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/09 18:30:30 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/08/21 01:10:42 by apaduan-         ###   ########.fr       */
+/*   Updated: 2021/08/21 01:36:11 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,6 @@ int	ft_print_s(char *string);
 int	ft_print_di(int c);
 int	ft_print_u(unsigned int c);
 int	ft_print_x(unsigned int c, int letter);
+int	ft_print_p (unsigned int c, int letter);
 
 #endif
