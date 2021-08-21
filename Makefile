@@ -6,7 +6,7 @@
 #    By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/11 22:01:08 by apaduan-          #+#    #+#              #
-#    Updated: 2021/08/19 23:28:03 by apaduan-         ###   ########.fr        #
+#    Updated: 2021/08/21 01:16:59 by apaduan-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,8 @@ C_SOURCE=ft_printf.c \
 		 ft_print_c.c \
 		 ft_print_s.c \
 		 ft_print_di.c \
-		 ft_print_u.c
+		 ft_print_u.c \
+		 ft_print_x.c
  
 # .h files
 H_SOURCE=ft_printf.h
@@ -95,6 +96,14 @@ test: rec
 	@echo 'Testing $(NAME)'
 	@echo ''
 	@$(CC) main.c $(NAME) && ./a.out
+	@rm a.out
+
+testm: rec
+	@echo ''
+	@echo ''
+	@echo 'Testing $(NAME)'
+	@echo ''
+	@$(CC) main_mochida.c $(NAME) && ./a.out
 	@rm a.out
 
 .PHONY: 

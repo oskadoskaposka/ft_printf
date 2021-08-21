@@ -1,30 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_print_x.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: apaduan- <apaduan-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/09 18:30:30 by apaduan-          #+#    #+#             */
-/*   Updated: 2021/08/21 01:10:42 by apaduan-         ###   ########.fr       */
+/*   Created: 2021/08/21 00:49:01 by apaduan-          #+#    #+#             */
+/*   Updated: 2021/08/21 01:12:02 by apaduan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+// Prints a string with hexadecimal number 'c' 
+// and returns numbers of printed chars.
 
-# include <stdarg.h>
-# include "Libft/libft.h"
+#include "ft_printf.h"
 
-//arquivos da Printf
-int	ft_printf(const char *string, ...);
-int	functions_flags(va_list args, int flag);
+int	ft_print_x (unsigned int c, int letter)
+{
+	int		counter;
+	char	*string;
 
-//arquivos das flags
-int	ft_print_c(int c);
-int	ft_print_s(char *string);
-int	ft_print_di(int c);
-int	ft_print_u(unsigned int c);
-int	ft_print_x(unsigned int c, int letter);
-
-#endif
+	string = ft_itoh (c, letter);
+	counter = ft_print_s (string);
+	free (string);
+	return (counter);
+}
